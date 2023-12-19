@@ -1,0 +1,54 @@
+img {
+    border-radius: 10%;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
+    display: block;
+    margin-right: 0px;
+    /*float: left;
+    margin-right: 20px;
+    border-radius: 10%;
+    position: relative;
+    bottom: 5px;
+    left: 70px; */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+#spec {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#kupljeno{
+    display: none; 
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        margin-right: 0;
+        margin-bottom: 20px; /* Add margin at the bottom for better spacing */
+        width: 400px;
+        height: 400px;
+    }
+
+    #spec {
+        flex: 1 0 100%;
+        max-width: 100%;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+}

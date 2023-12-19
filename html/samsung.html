@@ -1,87 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-         img {
-           float: left;
-            margin-right: 10px; 
-            border-radius: 10%;
-            position: relative;
-            bottom: 5px;
-            left: 100px;
-      }
-    h2{
-        text-align: center;
-    }
-    .spec{
-        position: static;
-        left: 500px;
-    }
-    </style>
+    <link rel="stylesheet" href="/css/phones.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Samsung Galaxy b5</title>
 </head>
-<body style="background-color: #00ABE4;">
-    <h2>Samsung Galaxy Z Flip 5</h2>
-    <img src="/images/Samsung-Galaxy-B5-FlipSuit-Case-sku-header-180723.png" alt="Xiaomi Redmi 12" height="600px" width="600px">
-    <div id="spec">
-        <p><b>Dimensions:</b> Unfolded: 165.1 x 71.9 x 6.9 mm
-            Folded: 85.1 x 71.9 x 15.1 mm</p>
-        <p><b>Weight:</b>     187 g (6.60 oz)</p>
-        <p><b>Size:</b>   	  6.7 inches, 102.0 cm2 (~85.9% screen-to-body ratio)</p>
-        <p><b>Resolution:</b> 1080 x 2640 pixels (~425 ppi density)</p>
-        <p><b>OS:</b>         Android 13, upgradable to Android 14, One UI 6</p>
-        <p><b>CPU:</b>        Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)</p>
-        <p><b>GPU:</b>	      Adreno 740</p>
-        <p><b>Memory:</b>     Card slot	No
-            Internal	256GB 8GB RAM, 512GB 8GB RAM
-                 UFS 4.0</p>
-        <p><b>Main camera:</b> 12 MP, f/1.8, 24mm (wide), 1/1.76", 1.8µm, Dual Pixel PDAF, OIS
-            12 MP, f/2.2, 123˚ (ultrawide), 1.12µm</p>
-        <p><b>Selfie camera:</b> 10 MP, f/2.2, 23mm (wide), 1.22µm</p>
-        <p><b>Comms:</b>     WLAN	Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct
-            Bluetooth	5.3, A2DP, LE
-            Positioning	GPS, GLONASS, GALILEO, BDS
-            NFC	Yes
-            Radio	No
-            USB	USB Type-C 3.2, OTG</p>
-        <p><b>Battery:</b>    Li-Po 3700 mAh, non-removable</p>
-        <p>Cijena: </p>
-        <b><p id="ukupnaCijena">1.152,44 KM</p></b>
-        
-        
-        <form id="kupi">
-            <label for="kolicina">Količina:</label>
-            <input type="number" id="kolicina" name="kolicina" min="1" value="1">
-        
-            <br>
-            <br>
-        
-            <button type="button" onclick="ukupnaCijena()">PURCHASE</button>
-        </form>
-        <div id="total"></div>
-        <div id="kupljeno" style="display: none; color: green;"></div>
-        <script>
-            function ukupnaCijena() {
-                var kolicina = document.getElementById("kolicina").value;
-                if (kolicina <= 0) {
-                    alert("Molimo vas da unesete ispravnu količinu.");
-                    return;
-                }
-                var cijenaKomponenti = getCijenaKomponenti();
-                var total = kolicina * cijenaKomponenti;
-                document.getElementById("total").innerHTML = "Ukupno: " + total.toFixed(2) + " KM";
-                document.getElementById("kupljeno").innerHTML = "Proizvod uspješno kupljen!";
-                document.getElementById("kupljeno").style.display = "block";
-            }
-        
-            function getCijenaKomponenti() {
-                var cijena = 1152.44;
-                return cijena; 
-            }
-        </script>
-    
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo" id="logo">
+        </div>
+        <div class="nav-container">
+            <div class="topnav">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Products</button>
+                    <div class="dropdown-content">
+                        <a href="samsung.html">Samsung</a>
+                        <a href="iphone.html">iPhone</a>
+                        <a href="xiaomi.html">Xiaomi</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+            </div>
+        </div>
     </div>
+    <h2>Samsung Galaxy Z Flip 5</h2>
+    <div class="container">
+        <img src="/images/Samsung-Galaxy-B5-FlipSuit-Case-sku-header-180723.png" alt="Xiaomi Redmi 12" height="600px"
+            width="600px">
+        <div id="spec">
+            <p><b>Dimensions:</b> Unfolded: 165.1 x 71.9 x 6.9 mm
+                Folded: 85.1 x 71.9 x 15.1 mm</p>
+            <p><b>Weight:</b> 187 g (6.60 oz)</p>
+            <p><b>Size:</b> 6.7 inches, 102.0 cm2 (~85.9% screen-to-body ratio)</p>
+            <p><b>Resolution:</b> 1080 x 2640 pixels (~425 ppi density)</p>
+            <p><b>OS:</b> Android 13, upgradable to Android 14, One UI 6</p>
+            <p><b>CPU:</b> Octa-core (1x3.36 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz
+                Cortex-A510)</p>
+            <p><b>GPU:</b> Adreno 740</p>
+            <p><b>Memory:</b> Card slot No
+                Internal 256GB 8GB RAM, 512GB 8GB RAM
+                UFS 4.0</p>
+            <p><b>Main camera:</b> 12 MP, f/1.8, 24mm (wide), 1/1.76", 1.8µm, Dual Pixel PDAF, OIS
+                12 MP, f/2.2, 123˚ (ultrawide), 1.12µm</p>
+            <p><b>Selfie camera:</b> 10 MP, f/2.2, 23mm (wide), 1.22µm</p>
+            <p><b>Comms:</b> WLAN Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band, Wi-Fi Direct
+                Bluetooth 5.3, A2DP, LE
+                Positioning GPS, GLONASS, GALILEO, BDS
+                NFC Yes
+                Radio No
+                USB USB Type-C 3.2, OTG</p>
+            <p><b>Battery:</b> Li-Po 3700 mAh, non-removable</p>
+            <p>Cijena: </p>
+            <b>
+                <p id="ukupnaCijena">1152.44 KM</p>
+            </b>
+
+
+            <form id="kupi">
+                <label for="kolicina">Količina:</label>
+                <input type="number" id="kolicina" name="kolicina" min="1" value="1">
+
+                <br>
+                <br>
+
+                <button type="button" onclick="ukupnaCijena()">PURCHASE</button>
+            </form>
+            <div id="total"></div>
+            <div id="kupljeno"></div>
+        </div>
+    </div>
+    <script src="/js/phones.js"></script>
 </body>
 </html>
