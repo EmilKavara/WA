@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    img {
+            float: left;
+            margin-right: 10px; 
+            border-radius: 10%;
+            position: relative;
+            bottom: 50px;
+            left: 10px;
+          }
+    h2{
+            text-align: center;
+        }
+    .spec{
+        position: absolute;
+        left: 300px;
+    }
+        </style>
+</head>
+<body style="background-color: #00ABE4;">
+    <h2>Xiaomi Redmi 12</h2>
+    <img src="/images/pms_1679574085.06263133.png" alt="Xiaomi Redmi 12" height="700px" width="600px">
+    <div id="spec">
+        <p><b>Dimensions:</b> 168.6 x 76.3 x 8.2 mm (6.64 x 3.00 x 0.32 in)</p>
+        <p><b>Weight:</b>     198.5 g (7.02 oz)</p>
+        <p><b>Size:</b>   	  6.79 inches, 109.5 cm2 (~85.1% screen-to-body ratio)</p>
+        <p><b>Resolution:</b> 1080 x 2460 pixels (~396 ppi density)</p>
+        <p><b>OS:</b>         Android 13, MIUI 14</p>
+        <p><b>CPU:</b>        Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)</p>
+        <p><b>GPU:</b>	      Mali-G52 MC2</p>
+        <p><b>Memory:</b>     Card slot	microSDXC (uses shared SIM slot)
+            Internal	128GB 4GB RAM, 128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM
+                 eMMC 5.1</p>
+        <p><b>Main camera:</b> 50 MP, f/1.8, (wide), PDAF
+            8 MP, f/2.2, 120˚ (ultrawide)
+            2 MP, f/2.4, (macro)</p>
+        <p><b>Selfie camera:</b> 8 MP, f/2.1, (wide)</p>
+        <p><b>Comms:</b>     WLAN	Wi-Fi 802.11 a/b/g/n/ac, dual-band
+            Bluetooth	5.3, A2DP, LE
+            Positioning	GPS, GLONASS, BDS, GALILEO
+            NFC	Yes (market/region dependent)
+            Infrared port	Yes
+            Radio	FM radio
+            USB	USB Type-C</p>
+        <p><b>Battery:</b>    Li-Po 5000 mAh, non-removable</p>
+        <p>Cijena: </p>
+        <b><p id="ukupnaCijena">400.00 KM</p></b>
+        
+        
+        <form id="kupi">
+            <label for="kolicina">Količina:</label>
+            <input type="number" id="kolicina" name="kolicina" min="1" value="1">
+        
+            <br>
+            <br>
+        
+            <button type="button" onclick="ukupnaCijena()">PURCHASE</button>
+        </form>
+        <div id="total"></div>
+        <div id="kupljeno" style="display: none; color: green;"></div>
+        <script>
+            function ukupnaCijena() {
+                var kolicina = document.getElementById("kolicina").value;
+                if (kolicina <= 0) {
+                    alert("Molimo vas da unesete ispravnu količinu.");
+                    return;
+                }
+                var cijenaKomponenti = getCijenaKomponenti();
+                var total = kolicina * cijenaKomponenti;
+                document.getElementById("total").innerHTML = "Ukupno: " + total.toFixed(2) + " KM";
+                document.getElementById("kupljeno").innerHTML = "Proizvod uspješno kupljen!";
+                document.getElementById("kupljeno").style.display = "block";
+            }
+        
+            function getCijenaKomponenti() {
+                var cijena = 400.00;
+                return cijena; 
+            }
+        </script>
+    
+    </div>
+</body>
+</html>
