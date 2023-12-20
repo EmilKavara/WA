@@ -1,12 +1,12 @@
 function ukupnaCijena() {
     var kolicina = document.getElementById("kolicina").value;
     if (kolicina <= 0) {
-        alert("Molimo vas da unesete ispravnu količinu.");
+        alert("Enter correct quantity.");
         return;
     }
     var cijenaKomponenti = getCijenaKomponenti();
     var total = kolicina * cijenaKomponenti;
-    document.getElementById("total").innerHTML = "Ukupno: " + total.toFixed(2) + " KM";
+    document.getElementById("total").innerHTML = "Total: " + total.toFixed(2) + " KM";
     document.getElementById("kupljeno").innerHTML = "Successfully Purchased!";
     document.getElementById("kupljeno").style.display = "block";
 }
