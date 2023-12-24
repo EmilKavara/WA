@@ -61,6 +61,20 @@ body {
 .next {
     right: 1px;
 }
+[href='index.html']{
+    padding: #89CFF3;
+    border-radius: 20%;
+}
+[href='about.html']{
+    padding: #89CFF3;
+    border-radius: 20%;
+}
+button.dropbtn{
+    padding: #89CFF3;
+    border-radius: 20%;
+    
+}
+
 
 @media only screen and (max-width: 600px) {
 
