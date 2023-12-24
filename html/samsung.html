@@ -31,7 +31,13 @@
                 <a href="about.html">About</a>
             </div>
         </div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <ul id="itemList"></ul>
+            <span id="searchIcon">&#128269;</span>
+        </div>
     </div>
+
     <h2>Samsung Galaxy Z Flip 5</h2>
     <div class="container">
         <img src="/images/SamsungGalaxyZFlip5-1.jpg" alt="Xiaomi Redmi 12" height="600px"
@@ -73,7 +79,7 @@
                 <br>
                 <br>
 
-                <button type="button" onclick="ukupnaCijena()">PURCHASE</button>
+                <button type="button" class="purchase" onclick="ukupnaCijena()">PURCHASE</button>
             </form>
             <div id="total"></div>
             <div id="kupljeno"></div>
@@ -103,5 +109,6 @@
     </div>
 
     <script src="/js/phones.js"></script>
+    <script src="/js/search.js"></script>
 </body>
 </html>

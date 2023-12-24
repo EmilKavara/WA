@@ -46,6 +46,13 @@ h2 {
     display:none;
 }
 
+.purchase{
+    border-radius: 15px;
+    border:0px;
+    background-color: #00ABE4;
+    color: black;
+}
+
 @media only screen and (max-width: 600px) {
     img {
         margin-right: 0;

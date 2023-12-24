@@ -65,19 +65,25 @@
     text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
     .footer-links {
         flex-direction: row;
         justify-content: center;
-        width: 80%; /* Adjust the width as needed */
-        margin: 0 auto; /* Center the links on larger screens */
+        width: 80%; 
+        margin: 0 auto; 
     }
 
     .product-links {
-        margin-top: 0; /* Remove the top margin for product links on larger screens */
+        margin-top: 0;
     }
 
     .about-link {
-        margin-top: 0; /* Remove the top margin for the About link on larger screens */
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        font-size: 16px;
     }
 }

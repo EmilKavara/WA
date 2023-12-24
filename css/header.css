@@ -4,6 +4,7 @@
     align-items: center;
     background-color: #00A9FF;
     padding: 15px 0;
+    position: relative;
     border-bottom: #333 solid;
 }
 
@@ -11,14 +12,14 @@
     margin-right: 20px;
     max-width: 200px;
     max-height: 200px;
-    order:1;
+    order: 1;
 }
 
 .nav-container {
     display: flex;
-    order:2;
+    order: 2;
     align-items: end;
-    justify-content: end;
+    justify-content: flex-end; 
     margin-right: 50px;
 }
 
@@ -35,6 +36,40 @@
     padding: 14px 16px;
     box-sizing: border-box;
 }
+
+.search {
+    height: 120px;
+    width: 500px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 7%;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 50%;
+    vertical-align: middle;
+    border-radius: 15px;
+}
+
+input[type="text"]:focus {
+    border: 2px solid black;
+}
+
+#searchIcon {
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
@@ -92,18 +127,68 @@
     display: block;
 }
 
+.topnav a:not(.dropdown-content a) {
+    
+    border-radius: 20%;
+}
+
+#itemList {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    display:none;
+    height:15px;
+    margin: 0;
+}
+
+#itemList li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+}
+
+#itemList li:first-child {
+    border-top: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+}
+
 @media only screen and (max-width: 600px) {
-    .nav-container {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        min-height:250px;
+    }
+
+    .logo {
+        order: 1;
         margin-right: 0;
     }
 
-    .topnav {
-        justify-content: flex-start;
+    .nav-container {
+        order: 2;
+        margin-right: 0;
+        margin-bottom: 100px;
+        justify-content: center;
     }
 
-    .dropdown-content {
-        width: 100%;
-        left: 0;
-        text-align: left;
+    .search {
+        order: 3;
+        margin-top: 150px;
+    }
+
+    input[type="text"] {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    #searchIcon {
+        left: 80%;
+        top: 30%;
+        transform: translateX(-50%);
     }
 }
+
