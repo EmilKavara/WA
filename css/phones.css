@@ -17,6 +17,7 @@ img {
 
 h2 {
     text-align: center;
+    
 }
 
 #total, #kupljeno{
@@ -27,6 +28,7 @@ h2 {
     flex: 1;
     max-width: 500px;
     padding: 10px;
+    
 }
 
 #kupljeno{
