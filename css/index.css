@@ -3,101 +3,6 @@ body {
     padding: 0;
     background-color: #89CFF3;
 }
-
-.header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    background-color: #00A9FF;
-    padding: 15px 0;
-    border-bottom: #333 solid;
-}
-
-.logo {
-    margin-right: 20px;
-    max-width: 200px;
-    max-height: 200px;
-    order: 1;
-}
-
-.nav-container {
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    order: 2;
-    margin-left: 50px; 
-}
-
-.topnav {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.topnav a {
-    color: #f2f2f2;
-    text-decoration: none;
-    padding: 14px 16px;
-    box-sizing: border-box;
-}
-
-.topnav a:hover,
-.dropdown:hover .dropbtn {
-    background-color: #00ABE4;
-    color: black;
-    border-bottom: 2px solid black;
-}
-
-.topnav a.active ,.topnav .dropbtn.active{
-    color: white;
-    padding: #89CFF3;
-}
-
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    font-family: inherit;
-    padding: 14px 16px;
-    box-sizing: border-box;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: 160px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .slideshow-container {
     position: relative;
     max-width: 70%;
@@ -188,19 +93,6 @@ button {
   }
 
 @media only screen and (max-width: 600px) {
-    .nav-container {
-        margin-right: 0;
-    }
-
-    .topnav {
-        justify-content: flex-start;
-    }
-
-    .dropdown-content {
-        width: 100%;
-        left: 0;
-        text-align: left;
-    }
 
     .prev,
     .next {
