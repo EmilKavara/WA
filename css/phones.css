@@ -23,12 +23,14 @@ img {
 
 h2 {
     text-align: center;
+    
 }
 
 #spec {
     flex: 1;
     max-width: 500px;
     padding: 10px;
+    
 }
 
 #kupljeno{
