@@ -1,15 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #00ABE4;
+    background-color: #52D3D8;
 }
 
 .header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: #00ABE4;
+    background-color: #52D3D8;
     padding: 15px 0;
+    border-bottom: #333 solid;
 }
 
 .logo {
@@ -46,7 +47,7 @@ body {
     border-bottom: 2px solid black;
 }
 
-.topnav a.active {
+.topnav a.active ,.topnav .dropbtn.active{
     background-color: #2272FF;
     color: white;
 }
