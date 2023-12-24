@@ -1,0 +1,83 @@
+.footer {
+    background-color: #38419D;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.contact-info i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-links a {
+    margin-bottom: 5px;
+}
+
+.about-link {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+        width: 80%; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the links on larger screens */
+    }
+
+    .product-links {
+        margin-top: 0; /* Remove the top margin for product links on larger screens */
+    }
+
+    .about-link {
+        margin-top: 0; /* Remove the top margin for the About link on larger screens */
+    }
+}
