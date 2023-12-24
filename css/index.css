@@ -169,7 +169,23 @@ button.dropbtn{
     border-radius: 20%;
     
 }
-
+.search{
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 200px;
+    margin: 0;
+    border-radius: 7%;
+}
+button {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
 
 @media only screen and (max-width: 600px) {
     .nav-container {
