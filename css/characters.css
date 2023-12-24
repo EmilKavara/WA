@@ -1,0 +1,31 @@
+.about{
+    text-align: center;
+}
+.photos{
+    border-radius: 10%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+    display: block;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 80vh;
+}
+.us {
+    margin-left: 250px; 
+}
+.text{
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+}
+.user2{
+    margin-top: 90px;
+}
