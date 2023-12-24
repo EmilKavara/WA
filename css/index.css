@@ -17,13 +17,15 @@ body {
     margin-right: 20px;
     max-width: 200px;
     max-height: 200px;
+    order: 1;
 }
 
 .nav-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 200px;
+    align-items: end;
+    justify-content: end;
+    order: 2;
+    margin-left: 50px; 
 }
 
 .topnav {
@@ -48,8 +50,8 @@ body {
 }
 
 .topnav a.active ,.topnav .dropbtn.active{
-    background-color: #2272FF;
     color: white;
+    padding: #89CFF3;
 }
 
 .dropdown {
@@ -154,6 +156,20 @@ body {
 .next {
     right: 1px;
 }
+[href='index.html']{
+    padding: #89CFF3;
+    border-radius: 20%;
+}
+[href='about.html']{
+    padding: #89CFF3;
+    border-radius: 20%;
+}
+button.dropbtn{
+    padding: #89CFF3;
+    border-radius: 20%;
+    
+}
+
 
 @media only screen and (max-width: 600px) {
     .nav-container {
