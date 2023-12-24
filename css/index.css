@@ -74,22 +74,23 @@ button.dropbtn{
     border-radius: 20%;
     
 }
-.search{
-    height: 50px;
-    width: 500px;
-    display: flex;
-    position: fixed;
+.text{
+    height: 15px;
+    width: 250px;
+    display:inline;
+    position: relative;
     align-items: center;
     justify-content: center;
-    left: 450px;
+    left: 150px;
     border-radius: 7%;
 }
-button {
+.search{
     padding: 8px 12px;
-    background-color: #007BFF;
-    color: #fff;
+    color: black;
     border: none;
     cursor: pointer;
+    left: 450px;
+    position: absolute;
   }
 
 @media only screen and (max-width: 600px) {
