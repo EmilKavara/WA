@@ -75,13 +75,13 @@ button.dropbtn{
     
 }
 .search{
+    height: 50px;
+    width: 500px;
     display: flex;
-    position: static;
+    position: fixed;
     align-items: center;
     justify-content: center;
-    height: 30px;
-    width: 200px;
-    margin: 0;
+    left: 450px;
     border-radius: 7%;
 }
 button {
