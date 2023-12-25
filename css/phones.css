@@ -42,6 +42,10 @@ h2 {
     color: green;
 }
 
+#kolicina{
+    margin: 10px;
+}
+
 #showTotal{
     display:none;
 }

@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/popup.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/images/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Samsung Galaxy B5</title>
+    <title>Samsung Galaxy Z Flip 5</title>
 </head>
 
 <body>
@@ -69,20 +72,16 @@
             <p>Price: </p>
             <b>
                 <p id="ukupnaCijena">1152.44 KM</p>
-                <p id="showTotal"><b>Total:</b></p>
             </b>
 
 
             <form id="kupi">
                 <label for="kolicina">Quantity:</label>
                 <input type="number" id="kolicina" name="kolicina" min="1" value="1">
-
                 <br>
-                <br>
-
+                <p id="showTotal"><b>Total:</b></p>
                 <button type="button" class="purchase" onclick="ukupnaCijena()">PURCHASE</button>
             </form>
-            <div id="total"></div>
             <div id="overlay"></div>
             <div id="popup-container">
                 <p>Successfuly purchased!</p>
@@ -116,6 +115,6 @@
 
     <script src="/js/phones.js"></script>
     <script src="/js/search.js"></script>
-    <script src="/js/pupup.js"></script>
+    <script src="/js/popup.js"></script>
 </body>
 </html>
