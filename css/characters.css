@@ -1,31 +1,41 @@
-.about{
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    justify-content: center;
 }
-.photos{
+
+.first,
+.second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photos {
     border-radius: 10%;
     max-width: 200px;
     height: auto;
-    max-height: 200px;
     display: block;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin: auto 20px; 
 }
-.us {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    height: 80vh;
-}
-.us {
-    margin-left: 250px; 
-}
-.text{
+
+.text {
     flex: 1;
     max-width: 500px;
-    padding: 10px;
+    margin: auto; 
 }
-.user2{
-    margin-top: 90px;
+
+@media screen and (max-width: 600px) {
+    .first,
+    .second {
+        flex-direction: column; 
+    }
+
+    .photos {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
 }

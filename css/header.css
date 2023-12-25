@@ -1,4 +1,4 @@
-.header {
+.header , .header-about{
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -155,12 +155,24 @@ input[type="text"]:focus {
 }
 
 @media only screen and (max-width: 600px) {
-    .header {
+    .header , .header-about{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
-        min-height:250px;
+    }
+
+    .header{
+        min-height: 300px;
+    }
+
+    .header-about{
+        max-height: 150px;
+    }
+
+    .header-about img{
+            min-width: 100px;
+            min-height: 100px;
     }
 
     .logo {
