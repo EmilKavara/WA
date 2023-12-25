@@ -6,11 +6,9 @@ function ukupnaCijena() {
     }
     var cijenaKomponenti = getCijenaKomponenti();
     var total = kolicina * cijenaKomponenti;
-    document.getElementById("total").innerHTML = "Total: " + total.toFixed(2) + " KM";
-    document.getElementById("kupljeno").innerHTML = "Successfully Purchased!";
     document.getElementById("kupljeno").style.display = "block";
     document.getElementById("showTotal").style.display="none";
-    
+    popup(total);
 }
 
 function getCijenaKomponenti() {
@@ -28,7 +26,6 @@ document.getElementById('kolicina').addEventListener('input', function() {
         showTotalElement.style.display = "none";
         return; 
     }
-
     var cijenaKomponenti = getCijenaKomponenti();
     var total = inputValue * cijenaKomponenti;
 

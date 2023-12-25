@@ -1,4 +1,4 @@
-const items = ["Samsung Galaxy B5", "iPhone 15 Pro", "Xiaomi Redmi 12"];
+const items = ["Samsung Galaxy Z Flip 5", "iPhone 15", "Xiaomi Redmi 12"];
 
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
@@ -48,9 +48,9 @@ function navigateToPage(searchTerm) {
 
 function redirectToPage(item) {
     const pageName = item.toLowerCase().replace(/\s/g, "_");
-    if ("samsung galaxy b5".startsWith(item.toLowerCase())) {
+    if ("samsung galaxy z flip 5".startsWith(item.toLowerCase())) {
         window.location.href = "samsung.html";
-    } else if ("iphone 15 pro".startsWith(item.toLowerCase())) {
+    } else if ("iphone 15".startsWith(item.toLowerCase())) {
         window.location.href = "iphone.html";
     } else if ("xiaomi redmi 12".startsWith(item.toLowerCase())) {
         window.location.href = "xiaomi.html";
