@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+.about-us li{
+    text-align: left;
+}
+
 .first,
 .second {
     display: flex;
@@ -15,7 +19,6 @@
 }
 
 .photos {
-    border-radius: 10%;
     max-width: 200px;
     height: auto;
     display: block;
@@ -32,6 +35,11 @@
     .first,
     .second {
         flex-direction: column; 
+    }
+
+    .about-us li{
+        text-align: center;
+        
     }
 
     .photos {

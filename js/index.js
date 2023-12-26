@@ -15,7 +15,7 @@ function showSlides() {
     }
 
     slides[slideIndex - 1].style.display = "block";
-    slideshowInterval = setTimeout(showSlides, 2000); // Change image every 2 seconds
+    slideshowInterval = setTimeout(showSlides, 2000);
 }
 
 function plusSlides(n) {
@@ -23,5 +23,4 @@ function plusSlides(n) {
     showSlides();
 }
 
-// Initial call to start the slideshow
 showSlides();
