@@ -1,6 +1,5 @@
 let slideIndex = 0;
 let slideshowInterval;
-let isPaused = false;
 
 function showSlides() {
     const slides = document.getElementsByClassName("mySlides");

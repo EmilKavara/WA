@@ -47,7 +47,7 @@ function navigateToPage(searchTerm) {
 }
 
 function redirectToPage(item) {
-    const pageName = item.toLowerCase().replace(/\s/g, "_");
+    const pageName = item.toLowerCase();
     if ("samsung galaxy z flip 5".startsWith(item.toLowerCase())) {
         window.location.href = "samsung.html";
     } else if ("iphone 15".startsWith(item.toLowerCase())) {
