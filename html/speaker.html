@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBL Flip 6 Black</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/phones.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo" id="logo">
+        </div>
+        <div class="nav-container">
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn active">Products</button>
+                    <div class="dropdown-content">
+                        <a href="samsung.html">Samsung</a>
+                        <a href="iphone.html" class="active">iPhone</a>
+                        <a href="xiaomi.html">Xiaomi</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <ul id="itemList"></ul>
+            <span id="searchIcon">&#128269;</span>
+        </div>
+    </div>
+    <h2>JBL Flip 6 Black</h2>
+    <div class="container">
+        <img src="/images/jbl-flip-6-black.jpg" alt="JBL Flip 6 Black" height="400px" width="600px">
+        <div id="spec">
+        <p><b>Dimensions:</b> 68 x 178 x 72 mm</p>
+        <p><b>Weight:</b> 55.0 g Bluetooth Wireless Connection v4.2</p>
+        <p><b>Size:</b> 6.1 inches, 91.3 cm2 (~86.4% screen-to-body ratio)</p>
+        <p><b>Sound:</b>3.5mm jack: Yes, Line In</p>
+        <p><b>Features:</b>Transducer 2 x 40mm, IPX7 Waterproof, build-in microphone for answer call, Frequency response 70Hz – 20kHz, up to 12 hours </p>
+        <p><b>Battery:</b>Built-in rechargeable battery Lithium-ion Polymer (3.7V, 3000mAh)</p>
+<b>
+    <p id="ukupnaCijena">210.00 KM</p>
+</b>
+<form id="kupi">
+    <label for="kolicina">Quantity:</label>
+    <input type="number" id="kolicina" name="kolicina" min="1" value="1">
+    <br>
+    <p id="showTotal"><b>Total:</b></p>
+    <button type="button" class="purchase" onclick="ukupnaCijena()">PURCHASE</button>
+</form>
+<div id="total"></div>
+<div id="overlay"></div>
+<div id="popup-container">
+    <p>Successfuly Purchased!</p>
+    <p id="kupljeno"></p>
+    <button onclick="closePopup()" id="close">Close</button>
+</div>
+</div>
+</div>
+<br>
+<div class="footer">
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <p>online@shop.com</p>
+            <i class="fa-solid fa-phone"></i>
+            <p>033 123 456</p>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="footer-links">
+            <div class="product-links">
+                <a href="samsung.html">Samsung</a>
+                <a href="iphone.html">iPhone</a>
+                <a href="xiaomi.html">Xiaomi</a>
+            </div>
+            <a href="about.html" class="about-link">About Us</a>
+        </div>
+    </div>
+
+<script src="/js/phones.js"></script>
+<script src="/js/search.js"></script>
+<script src="/js/popup.js"></script>
+</body>
+</html>
