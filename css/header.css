@@ -97,6 +97,7 @@ input[type="text"]:focus {
     font-family: inherit;
     padding: 14px 16px;
     box-sizing: border-box;
+    border-radius: 20%;
 }
 
 .dropdown-content {
