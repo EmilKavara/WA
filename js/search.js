@@ -1,4 +1,4 @@
-const items = ["Samsung Galaxy Z Flip 5", "iPhone 15", "Xiaomi Redmi 12"];
+const items = ["Samsung Galaxy Z Flip 5", "iPhone 15", "Xiaomi Redmi 12","Apple Airpods Pro", "JBL Flip 6", "Hatalkin Charging Station"];
 
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
@@ -54,7 +54,13 @@ function redirectToPage(item) {
         window.location.href = "iphone.html";
     } else if ("xiaomi redmi 12".startsWith(item.toLowerCase())) {
         window.location.href = "xiaomi.html";
-    } else {
+    } else if ("apple airpods pro".startsWith(item.toLowerCase())) {
+        window.location.href = "airpods.html";
+    } else if ("jbl flip 6".startsWith(item.toLowerCase())) {
+        window.location.href = "speaker.html";
+    } else if ("hatalkin charging station".startsWith(item.toLowerCase())) {
+        window.location.href = "charger.html";
+    }  else {
         console.log(item);
     }
 }
