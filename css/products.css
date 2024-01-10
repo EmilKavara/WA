@@ -7,6 +7,21 @@ body{
     min-height: 100vh; 
     font-family: Arial, Helvetica, sans-serif;
 }
+.product{
+  display: flex;
+  text-align: center;
+}
+.product1 {
+  float: left;
+  width: 50%;
+}
+.product2 {
+  float: right;
+  width: 50%;
+}
+.product1, .product2{
+    flex: 1;
+}
 
 .grid-container {
     display: grid;

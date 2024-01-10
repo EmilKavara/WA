@@ -33,27 +33,12 @@
             <span id="searchIcon">&#128269;</span>
         </div>
     </div>
-
-    <div class="filter">
-        <label for="categoryFilter">Category:</label>
-    <select id="categoryFilter">
-        <option value="">All Categories</option>
-        <option value="phones">Phones</option>
-        <option value="accessories">Accessories</option>
-    </select>
-
-    <label for="brandFilter">Brand:</label>
-    <select id="brandFilter">
-        <option value="">All Brands</option>
-        <option value="apple">Apple</option>
-        <option value="samsung">Samsung</option>
-        <option value="xiaomi">Xiaomi</option>
-        <option value="jbl">JBL</option>
-        <option value="hatalkin">Hatalkin</option>
-    </select>
-
-    <div class="grid-container" id="productGrid">
-        <div class="grid-item" onclick="changePage('airpods')" data-category="accessories" data-brand="apple">
+    <div class="product">
+        <h2 class="product1">Accessories</h2>
+        <h2 class="product2">Phones</h2>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" onclick="changePage('airpods','1')">
             <img src="/images/apple-airpods-pro-2023-with-magsafe-charging-usb-type-c-white.jpg" alt="Apple Airpods Pro (2023)" height="100px" width="100px" >
             <p>Apple Airpods Pro (2023)</p>
         </div>
