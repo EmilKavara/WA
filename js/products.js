@@ -17,8 +17,22 @@ function changePage(page){
 document.getElementById('categoryFilter').addEventListener('change', updateGrid);
 document.getElementById('brandFilter').addEventListener('change', updateGrid);
     function updateGrid() {
+       
+        var h2Elements = document.querySelectorAll('h2');
+        h2Elements.forEach(function(h2) {
+        h2.style.display = "none";
+        });
+
         var categoryFilter = document.getElementById('categoryFilter').value;
         var brandFilter = document.getElementById('brandFilter').value;   
+
+        if(categoryFilter=="" && brandFilter==""){
+            var h2Elements = document.querySelectorAll('h2');
+            h2Elements.forEach(function(h2) {
+            h2.style.display = "block";
+        });
+        }
+
         var gridItems = document.querySelectorAll('.grid-item');
         gridItems.forEach(function(item) {
           var itemCategory = item.getAttribute('data-category');
