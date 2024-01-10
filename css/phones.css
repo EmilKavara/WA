@@ -4,7 +4,7 @@ body {
     background-color: #89CFF3;
 }
 
-img {
+.container img {
     border-radius: 10%;
     max-width: 600px;
     height: auto;
@@ -13,12 +13,20 @@ img {
     margin-right: 0px;
 }
 
-.container {
+.container, .container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width:100%;
     margin: 0 auto;
+}
+.container2 img{
+    border-radius: 10%;
+    max-width: 600px;
+    height: 400px;
+    max-height: 600px;
+    display: block;
+    margin-right: 0px;
 }
 
 h2 {
@@ -62,7 +70,7 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-    img {
+    .container img, .container2 img {
         margin-right: 0;
         margin-bottom: 20px; 
         width: 400px;
@@ -81,5 +89,8 @@ h2 {
 @media only screen and (min-width: 800px) {
     .container{
         height: 720px;
+    }
+    .container2{
+        height: 500px;
     }
 }
