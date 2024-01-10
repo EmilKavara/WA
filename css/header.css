@@ -71,61 +71,15 @@ input[type="text"]:focus {
 }
 
 
-.topnav a:hover,
-.dropdown:hover .dropbtn {
+.topnav a:hover {
     background-color: #00ABE4;
     color: black;
     border-bottom: 2px solid black;
 }
 
-.topnav a.active ,.topnav .dropbtn.active{
+.topnav a.active {
     background-color: #2272FF;
     color: white;
-}
-
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: inherit;
-    font-family: inherit;
-    padding: 14px 16px;
-    box-sizing: border-box;
-    border-radius: 20%;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: 160px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .topnav a:not(.dropdown-content a) {
@@ -203,7 +157,7 @@ input[type="text"]:focus {
 
     .search {
         order: 3;
-        margin-top: 150px;
+        margin-top: 220px;
     }
 
     input[type="text"] {
