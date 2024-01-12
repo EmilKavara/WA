@@ -68,10 +68,20 @@ body{
   margin-top: 10px;
 }
 
-#brandFilter , #categoryFilter{
+select{
   border: 2px solid black;
   background-color: #89CFF3;
   border-radius: 10px;
+  appearance: none;
+  padding: 5px;
+}
+
+#brandFilter{
+  width:85px;
+}
+
+#categoryFilter{
+  width:100px;
 }
 
 @media screen and (max-width: 600px) {
