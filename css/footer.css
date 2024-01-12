@@ -79,17 +79,17 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  form {
+  .forma {
     display: grid;
     gap: 10px;
   }
   
-  label {
+  .froma label {
     font-weight: bold;
   }
   
-  input,
-  textarea {
+  .forma input,
+  .forma textarea {
     width: 100%;
     max-width: 100%;
     padding: 8px;
@@ -108,6 +108,10 @@
   
   .formBttn:hover {
     background-color: #45a049;
+  }
+
+  #name{
+        width: 100%;
   }
 
 @media (min-width: 750px) {
