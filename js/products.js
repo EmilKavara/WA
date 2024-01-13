@@ -16,6 +16,7 @@ function changePage(page){
 
 document.getElementById('categoryFilter').addEventListener('change', updateGrid);
 document.getElementById('brandFilter').addEventListener('change', updateGrid);
+
     function updateGrid() {
        
         var h2Elements = document.querySelectorAll('h2');
